@@ -3,13 +3,12 @@
     font-size: 12px;
 }
 
-.iconfont,
-.layui-icon {
+.iconfont {
     margin-right: 10px;
 }
 
 .layui-icon {
-    margin-left: 10px;
+    margin-right: 10px;
 }
 
 iframe {
@@ -51,4 +50,8 @@ iframe {
     position: relative;
     top: 3px;
     margin-right: 10px;
+}
+
+.layui-nav-item a {
+    font-size: 12px;
 }

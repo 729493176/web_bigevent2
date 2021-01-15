@@ -26,15 +26,15 @@ $(function() {
     // 注册账号 监听注册表单的提交事件
     $('#form-reg').on('submit', function(e) {
         e.preventDefault()
-        var data = {
-            username: $('#form-reg [name=username]').val(),
-            password: $('#form-reg [name=password]').val()
-        }
+            /* var data = {
+                username: $('#form-reg [name=username]').val(),
+                password: $('#form-reg [name=password]').val()
+            } */
 
         $.ajax({
             method: 'post',
             url: '/api/reguser',
-            data: data,
+            data: $('#form-reg').serialize(),
             success: function(res) {
                 if (res.status !== 0) {
                     return layer.msg('注册失败')
